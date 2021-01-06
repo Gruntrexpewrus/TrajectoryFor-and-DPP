@@ -64,7 +64,7 @@ and we based the DPP implementation from the paper:
    title={Determinantal Point Processes for Machine Learning},
    volume={5},
    ISSN={1935-8245},
-   url={http://dx.doi.org/10.1561/2200000044},
+   url=http://dx.doi.org/10.1561/2200000044,
    DOI={10.1561/2200000044},
    number={2-3},
    journal={Foundations and Trends® in Machine Learning},

@@ -73,4 +73,4 @@ and we based the DPP implementation from the paper:
    pages={123–286}
 }
 
-## Thanks to Professor Fabio Galasso for giving us a challengin last project
+## Thanks to Professor Fabio Galasso for giving us a challenging last project

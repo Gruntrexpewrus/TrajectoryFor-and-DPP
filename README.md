@@ -5,9 +5,9 @@ We mix Determinantal Point Processes with Transformers for Trajectory Forecastin
 
 # How to run
 
-To run any code just use Google Colab and write:
+To run any code just use Google Colab, copy the reporsitory and write:
 
-cd '/content/Trajectory-Transformer'
+cd '/content/TrajectoryFor-and-DPP'
 
 CUDA_VISIBLE_DEVICES=0
 
@@ -18,17 +18,17 @@ there are many other customizations of the model and are the same of the Transfo
 # Files
 First of all, we started to code from the Transformers repository by FrancescoGiuliari4, and you can find our work in the repository by Gruntrexpewrus5. Thefiles that we produce are the following, all but the last are about the QuantizedTransformer with DPP, the last is about the Transformer coupled with the DPPsampling after output(that was the best method):
 
-•QuantizedTFsamples.py: this originally was the main class of Prof.GalassoTransformer, we introduced here, after the decoder, a sampling of from theouput. The class is able to return both the cluster chosen and the relativeposition.
+•**QuantizedTFsamples.py**: this originally was the main class of Prof.GalassoTransformer, we introduced here, after the decoder, a sampling of from theouput. The class is able to return both the cluster chosen and the relativeposition.
 
-•LossLeNeg.py:  Here is implemented the custom Loss following the algo-rithm for the DSF(γ) training of Kitani’s paper, but adapted by us for theTransformer. More detail will come below.
+•**LossLeNeg.py**:  Here is implemented the custom Loss following the algorithm for the DSF(γ) training of Kitani’s paper, but adapted by us for theTransformer. More detail will come below.
 
-•SamplerLeNeg.py:  This is the module where,  using torch.multinomial,we sample at each step some clusters from the 1000 dimensional vectorreturned by the standard quantized transformer.
+•**SamplerLeNeg.py**:  This is the module where,  using torch.multinomial,we sample at each step some clusters from the 1000 dimensional vectorreturned by the standard quantized transformer.
 
-•TESTDPP.py:  Here we coded all the metrics, defined a recursive functionto create the mutlifutures and tested our results.
+•**TESTDPP.py**:  Here we coded all the metrics, defined a recursive functionto create the mutlifutures and tested our results.
 
-•testquantizedTF.py: this is the code for the test using Prof.Galasso Trans-former, we implemented also here our metrics and functions to compare theresults later with our new method.
+•**testquantizedTF.py**: this is the code for the test using Prof.Galasso Trans-former, we implemented also here our metrics and functions to compare theresults later with our new method.
 
-•DPPsampler.py:  this is the code for the test using Prof.Galasso Trans-former and implement DPP sampler on the result of it to add diversity.
+•**DPPsampler.py**:  this is the code for the test using Prof.Galasso Trans-former and implement DPP sampler on the result of it to add diversity.
 
 # Bibliography
 As stated above.

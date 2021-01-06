@@ -11,7 +11,7 @@ We mix Determinantal Point Processes with Transformers for Trajectory Forecastin
 
 # How to run
 
-To run any code just use Google Colab, download the [repository](https://github.com/FGiuliari/Trajectory-Transformer/) of Prof.Galasso(since models are based on that, you can copy it writing <<!git clone https://github.com/FGiuliari/Trajectory-Transformer/>>), add the files of this repository in the directory and write:
+To run any code just use Google Colab, download the [repository](https://github.com/FGiuliari/Trajectory-Transformer/) of Prof.Galasso(since models are based on that, you can copy it writing !git clone https://github.com/FGiuliari/Trajectory-Transformer/), add the files of this repository in the directory and write:
 
 cd '/directorywhereyouarerunningeverything'
 

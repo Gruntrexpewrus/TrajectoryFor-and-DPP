@@ -4,11 +4,12 @@ We mix Determinantal Point Processes with Transformers for Trajectory Forecastin
 To run any code just use Google Colab and write:
 cd '/content/Trajectory-Transformer'
 
+# How to run
 CUDA_VISIBLE_DEVICES=0
 !python NAMEOFFILE.py --dataset_name dataset(or zara1 or zara2) --name dataset(or zara1 or zara2) --batch_size xnumx
 there are many other customizations of the model and are the same of the Transformers by Prof.Galasso from the repository: https://github.com/FGiuliari/Trajectory-Transformer/.
 
-
+# Files
 First of all, we started to code from the Transformers repository by FrancescoGiuliari4, and you can find our work in the repository by Gruntrexpewrus5. Thefiles that we produce are the following, all but the last are about the QuantizedTransformer with DPP, the last is about the Transformer coupled with the DPPsampling after output(that was the best method):
 
 •QuantizedTFsamples.py: this originally was the main class of Prof.GalassoTransformer, we introduced here, after the decoder, a sampling of from theouput. The class is able to return both the cluster chosen and the relativeposition.
@@ -23,7 +24,7 @@ First of all, we started to code from the Transformers repository by FrancescoGi
 
 •DPPsampler.py:  this is the code for the test using Prof.Galasso Trans-former and implement DPP sampler on the result of it to add diversity.
 
-
+# Bibliography
 As stated above.
 Our codes and models start from:
 

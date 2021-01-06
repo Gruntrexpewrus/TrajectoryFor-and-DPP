@@ -204,6 +204,7 @@ def main():
             pr=[]
             val_loss=0
             step=0
+            j = 0
             for batch in val_dl:
                 # rot_mat = np.array([[np.cos(r), np.sin(r)], [-np.sin(r), np.cos(r)]])
                 n_in_batch = batch['src'].shape[0]
@@ -224,7 +225,7 @@ def main():
                 out = model(inp, dec_inp, src_att, trg_att) #those are the selected points (2D)
 
                 vector_of_zs2 = model.zs #those are probs of the selected points!
-            
+                j += 1
                 R = torch.quantile(vector_of_zs2, 0.9)
                 loss_class = LeNeg_loss(R)
                 print('Hi I am entering the Val_loss')
@@ -234,7 +235,7 @@ def main():
                 val_loss+=loss.item()
                 step+=1
 
-            loss_epochs_Val[str(epoch)] = val_loss 
+            loss_epochs_Val[str(epoch)] = val_loss  / j
             log.add_scalar('validation/loss', val_loss / len(val_dl), epoch)
 
     with open('Loss_train_LeNegbig_zara2.json', 'w') as fp:

@@ -1,12 +1,18 @@
 # TrajectoryFor-and-DPP
 We mix Determinantal Point Processes with Transformers for Trajectory Forecasting on ETH/UCY
 
-To run any code just use Google Colab and write:
-cd '/content/Trajectory-Transformer'
+
 
 # How to run
+
+To run any code just use Google Colab and write:
+
+cd '/content/Trajectory-Transformer'
+
 CUDA_VISIBLE_DEVICES=0
+
 !python NAMEOFFILE.py --dataset_name dataset(or zara1 or zara2) --name dataset(or zara1 or zara2) --batch_size xnumx
+
 there are many other customizations of the model and are the same of the Transformers by Prof.Galasso from the [repository](https://github.com/FGiuliari/Trajectory-Transformer/) .
 
 # Files

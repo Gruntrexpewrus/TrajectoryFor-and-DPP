@@ -1,6 +1,11 @@
 # TrajectoryFor-and-DPP
 We mix Determinantal Point Processes with Transformers for Trajectory Forecasting on ETH/UCY
 
+## Authors:
+Leonardo Placidi
+Negin Amininodoushan
+
+
 
 
 # How to run
@@ -68,4 +73,4 @@ and we based the DPP implementation from the paper:
    pages={123–286}
 }
 
-
+## Thanks to Professor Fabio Galasso for giving us a challengin last project

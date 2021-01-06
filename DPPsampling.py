@@ -375,7 +375,7 @@ def main():
             for i in range(args.preds):
                 trg_att = subsequent_mask(dec_inp.shape[1]).repeat(n_in_batch, 1, 1).to(device)
                 out = model(inp, dec_inp, src_att, trg_att)
-                print(out.shape)
+                #print(out.shape)
                 #print('out', out)
                 #print('out-1', out[:,-1,:])
                 #print('out-1', out[:,-1,:].shape)
@@ -414,7 +414,7 @@ def main():
         print('MULITMODALITY NOW')
         # MULTI MODALITY
         num_samples= 21 #args.num_samples
-        print("num_samples", num_samples)
+        #print("num_samples", num_samples)
         #print("Entered multi modality")
         model.eval()
         gt=[]
@@ -517,12 +517,12 @@ def main():
         samp = {}
 
         for k in pr_all.keys():
-            print('len(pr_all)' , len(pr_all))
+            #print('len(pr_all)' , len(pr_all))
            # print('pr', pr_all[k])
             #print('pr_shape0', pr_all[k][0].shape)
             #print('pr_shape0', pr_all[k][1].shape)
             #print('pr_shape0', pr_all[k][2].shape)
-            print('pr_shape', len(pr_all[k]))
+            #print('pr_shape', len(pr_all[k]))
             #print(np.concatenate((pr_all[k][0],pr_all[k][1], pr_all[k][2])).shape)
             
             samp[k] = {}

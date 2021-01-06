@@ -2,8 +2,9 @@
 We mix Determinantal Point Processes with Transformers for Trajectory Forecasting on ETH/UCY
 
 ## Authors:
-Leonardo Placidi
-Negin Amininodoushan
+-Leonardo Placidi
+
+-Negin Amininodoushan
 
 
 

@@ -7,7 +7,7 @@ cd '/content/Trajectory-Transformer'
 # How to run
 CUDA_VISIBLE_DEVICES=0
 !python NAMEOFFILE.py --dataset_name dataset(or zara1 or zara2) --name dataset(or zara1 or zara2) --batch_size xnumx
-there are many other customizations of the model and are the same of the Transformers by Prof.Galasso from the [https://github.com/FGiuliari/Trajectory-Transformer/](repository) .
+there are many other customizations of the model and are the same of the Transformers by Prof.Galasso from the [repository](https://github.com/FGiuliari/Trajectory-Transformer/) .
 
 # Files
 First of all, we started to code from the Transformers repository by FrancescoGiuliari4, and you can find our work in the repository by Gruntrexpewrus5. Thefiles that we produce are the following, all but the last are about the QuantizedTransformer with DPP, the last is about the Transformer coupled with the DPPsampling after output(that was the best method):

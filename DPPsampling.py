@@ -262,7 +262,7 @@ def get_metrics_ADEandFDE(gts_dict, prs_dict):
 def main():
     parser=argparse.ArgumentParser(description='Train the individual Transformer model')
     parser.add_argument('--dataset_folder',type=str,default='datasets')
-    parser.add_argument('--dataset_name',type=str,default='zara1')
+    parser.add_argument('--dataset_name',type=str,default='zara2')
     parser.add_argument('--obs',type=int,default=8)
     parser.add_argument('--preds',type=int,default=12)
     parser.add_argument('--emb_size',type=int,default=512)
@@ -272,8 +272,8 @@ def main():
     parser.add_argument('--verbose',action='store_true')
     parser.add_argument('--batch_size',type=int,default=256)
     parser.add_argument('--delim',type=str,default='\t')
-    parser.add_argument('--name', type=str, default="zara1")
-    parser.add_argument('--epoch',type=str,default="00019")
+    parser.add_argument('--name', type=str, default="zara2")
+    parser.add_argument('--epoch',type=str,default="00018")
     parser.add_argument('--num_samples', type=int, default="21")
 
 
@@ -498,7 +498,7 @@ def main():
                 preds_tr_b=clusters[dec_inp[:,1:].cpu().numpy()].cumsum(1)+batch['src'][:,-1:,0:2].cpu().numpy()
                 pr_all[sam].append(preds_tr_b)
                 sam += 1
-                print('sammmm' , sam)
+                #print('sammmm' , sam)
                       
                     
 
@@ -515,10 +515,7 @@ def main():
         #pr=np.concatenate(pr,0)
         inp=np.concatenate(inp_,0)
         samp = {}
-        print('####################################################')
-        print('keys')
-        #print(pr_all.keys())
-        print('####################################################')
+
         for k in pr_all.keys():
             print('len(pr_all)' , len(pr_all))
            # print('pr', pr_all[k])

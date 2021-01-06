@@ -267,7 +267,7 @@ def main():
     parser.add_argument('--batch_size',type=int,default=256)
     parser.add_argument('--delim',type=str,default='\t')
     parser.add_argument('--name', type=str, default="zara1")
-    parser.add_argument('--epoch',type=str,default="00019")
+    parser.add_argument('--epoch',type=str,default="00018")
     parser.add_argument('--num_samples', type=int, default="21")
 
 
@@ -408,7 +408,7 @@ def main():
         print('MULITMODALITY NOW')
         # MULTI MODALITY
         num_samples= 21 #args.num_samples
-        print("num_samples", num_samples)
+        
         #print("Entered multi modality")
         model.eval()
         gt=[]
@@ -465,7 +465,7 @@ def main():
       
             values, index= h.sort(1)
             best_out = index[:,-100:]#.to(device)
-            print('best_out', best_out)
+            #print('best_out', best_out)
             coord = clusters[best_out.cpu().numpy()]
             coord = np.prod(coord, axis = 2)
                       #print('cooord', coord.shape)
@@ -533,12 +533,12 @@ def main():
         #print(pr_all.keys())
       
         for k in pr_all.keys():
-            print('len(pr_all)' , len(pr_all))
+            #print('len(pr_all)' , len(pr_all))
            # print('pr', pr_all[k])
             #print('pr_shape0', pr_all[k][0].shape)
             #print('pr_shape0', pr_all[k][1].shape)
             #print('pr_shape0', pr_all[k][2].shape)
-            print('pr_shape', len(pr_all[k]))
+            #print('pr_shape', len(pr_all[k]))
             #print(np.concatenate((pr_all[k][0],pr_all[k][1], pr_all[k][2])).shape)
             
             samp[k] = {}

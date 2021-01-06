@@ -369,7 +369,7 @@ def main():
             for i in range(args.preds):
                 trg_att = subsequent_mask(dec_inp.shape[1]).repeat(n_in_batch, 1, 1).to(device)
                 out = model(inp, dec_inp, src_att, trg_att)
-                print(out.shape)
+                #print(out.shape)
                 #print('out', out)
                 #print('out-1', out[:,-1,:])
                 #print('out-1', out[:,-1,:].shape)

@@ -1,7 +1,7 @@
 # TrajectoryFor-and-DPP
 We mix Determinantal Point Processes with Transformers for Trajectory Forecasting on ETH/UCY. Final project in the course of Advanced Machine Learning at Sapienza Data Science's Master's degree.
 
-![Screenshot](TFDPP.jpg)
+![Screenshot](TFDPPff.jpg)
 ## Authors:
 -Leonardo Placidi
 

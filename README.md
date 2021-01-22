@@ -34,7 +34,7 @@ First of all, we started to code from the Transformers repository by FrancescoGi
 
 •**test_quantizedTF.py**: this is the code for the test using Prof.Galasso Transformer, we implemented also here our metrics and functions to compare theresults later with our new method.
 
-•**DPPsampler.py**:  this is the code for the test using Prof.Galasso Trans-former and implement DPP sampler on the result of it to add diversity.
+•**DPPsampler.py**:  this is the code for the test using Prof.Galasso Transformer and implement DPP sampler on the result of it to add diversity.
 
 # Bibliography
 As stated above.

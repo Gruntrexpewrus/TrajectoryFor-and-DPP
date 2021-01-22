@@ -32,7 +32,7 @@ First of all, we started to code from the Transformers repository by FrancescoGi
 
 •**TESTDPP.py**:  Here we coded all the metrics, defined a recursive functionto create the mutlifutures and tested our results.
 
-•**test_quantizedTF.py**: this is the code for the test using Prof.Galasso Trans-former, we implemented also here our metrics and functions to compare theresults later with our new method.
+•**test_quantizedTF.py**: this is the code for the test using Prof.Galasso Transformer, we implemented also here our metrics and functions to compare theresults later with our new method.
 
 •**DPPsampler.py**:  this is the code for the test using Prof.Galasso Trans-former and implement DPP sampler on the result of it to add diversity.
 
